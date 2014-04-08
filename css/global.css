@@ -33,6 +33,27 @@ section {
   padding: 15px;
   margin: 0;
   box-shadow: rgba(0,0,0,.15) 0 15px 50px;
+  position: relative;
+}
+
+.clearLink {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px;
+  background: #eaeaea;
+  color: #777;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10pt;
+  text-shadow: rgba(255,255,2550.5) 0 1px 2px;
+  text-decoration: none;
+  outline: none;
+}
+
+.clearLink:hover {
+  background: #f0f0f0;
 }
 
 textarea {
@@ -51,6 +72,9 @@ textarea {
   box-shadow: inset rgba(0,0,0,.05) 0 3px 10px;
   border-radius: 3px;
   transition: all 0.2s ease-in-out;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 textarea:focus {
